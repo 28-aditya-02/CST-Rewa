@@ -1,0 +1,540 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fd8719;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.contact-info i {
+    color: #a64ce4;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffeff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.fb {
+    background-color: red;
+}
+
+.linkedin {
+    background-color: #fd8719;
+}
+
+.instagram {
+    background: red;
+}
+
+.youtube {
+    background-color: #fd8719;
+}
+
+.language-select {
+    position: relative;
+    display: inline-block;
+}
+
+select {
+    padding: 8px 12px;
+    border: 2px solid #fd8719;
+    border-radius: 5px;
+    background-color: #fffeff;
+    font-size: 14px;
+    color: #fd8719;
+    cursor: pointer;
+    outline: none;
+}
+
+select:hover {
+    border-color: red;
+}
+
+.google-translate {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.google-translate img {
+    height: 12px;
+    vertical-align: middle;
+}
+
+.mydiv {
+    height: 1700px;
+
+}
+
+.header2 {
+    height: 1270px;
+    width: 147px;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffeff;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px 40px;
+    height: 140px;
+}
+
+.cstr-logo {
+    height: 120px;
+    width: auto;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 85px;
+}
+
+.cst-logo {
+    height: 80px;
+    width: auto;
+    padding-right: 100px;
+}
+
+.trust-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+    min-height: 140px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.trust-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fd8719;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.trust-tagline {
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
+    letter-spacing: 0.8px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1200px) {
+    .trust-name {
+        font-size: 36px;
+    }
+
+    .trust-tagline {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trust-name {
+        font-size: 28px;
+        letter-spacing: 1.5px;
+    }
+
+    .trust-tagline {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #fd8719;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li a {
+    display: block;
+    color: #fffeff;
+    text-decoration: none;
+    padding: 18px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-list>li>a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%) scaleX(0);
+    width: 60%;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), background 0.3s;
+    pointer-events: none;
+}
+
+.nav-list>li>a:hover {
+    background: linear-gradient(90deg, #fd8719 0%, #ff3c3c 100%);
+    color: #fff;
+    box-shadow: 0 4px 18px -8px #fd8719;
+}
+
+.nav-list>li>a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    background: #fff;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fd8719;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: dropdownFade 0.3s ease;
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.dropdown-content a {
+    color: #fd8719;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-transform: none;
+    font-weight: 500;
+    text-align: left;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #e51313;
+    color: #fffeff;
+    padding-left: 30px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Active state */
+.nav-list li.active>a {
+    background-color: red;
+    color: #fffeff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .nav-list li a {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        min-width: 100%;
+        transform: none;
+        animation: none;
+        border-radius: 0;
+    }
+
+    .dropdown-content a {
+        padding: 12px 30px;
+        background-color: rgba(166, 76, 228, 0.1);
+    }
+
+    .nav-list li a {
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .donate-button {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .donate-button:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* Donate Button Styles */
+.donate-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: darkblue;
+    color: #fffeff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+}
+
+.donate-button:hover {
+    background-color: #fffeff;
+    color: red;
+    border-color: red;
+    transform: translateY(calc(-50% - 2px));
+}
+
+.donate-button i {
+    font-size: 16px;
+}
+
+.header-image {
+    width: 100%;
+    height: 320px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: #ff9248;
+    color: white;
+    padding: 2rem;
+}
+
+.header-box h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.container-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Add a wrapper for the FAQ containers */
+.faq-wrapper {
+    display: flex;
+    gap: 2rem; /* Add spacing between the two containers */
+    justify-content: center; /* Center the containers horizontally */
+    align-items: flex-start; /* Align containers at the top */
+}
+
+/* Adjust the width of each FAQ container */
+.container, .container-2 {
+    flex: 1; /* Make both containers take equal space */
+    max-width: 50%; /* Limit the width to 50% of the parent */
+    padding: 1rem; /* Add some padding */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better distinction */
+    /* background-color: #fff; Optional: Add a background color  */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-right: 5.5em;
+    margin-left: 5.5em;
+}
+
+.faq-container {
+    margin-top: 2rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    color: #3f5c9c;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.8rem;
+    color: #3f5c9c;
+}
+
+.faq-answer {
+    padding: 0 0 1rem;
+    display: none;
+    color: #444;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::after {
+    content: '−';
+}

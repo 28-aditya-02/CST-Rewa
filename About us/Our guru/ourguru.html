@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gurus - Chinmaya Mission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fffffa;
+        }
+
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+}
+
+.contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #fd8719;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+        }
+
+        .contact-info i {
+            color: #a64ce4;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fffeff;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .fb {
+            background-color: red;
+        }
+
+        .linkedin {
+            background-color: #fd8719;
+        }
+
+        .instagram {
+            background: red;
+        }
+
+        .youtube {
+            background-color: #fd8719;
+        }
+
+        .language-select {
+            position: relative;
+            display: inline-block;
+        }
+
+        select {
+            padding: 8px 12px;
+            border: 2px solid #fd8719;
+            border-radius: 5px;
+            background-color: #fffeff;
+            font-size: 14px;
+            color: #fd8719;
+            cursor: pointer;
+            outline: none;
+        }
+
+        select:hover {
+            border-color: red;
+        }
+
+        .google-translate {
+            font-size: 12px;
+            color: #777;
+            text-align: right;
+            margin-top: 2px;
+        }
+
+        .google-translate img {
+            height: 12px;
+            vertical-align: middle;
+        }
+
+        .mydiv {
+            height: 1700px;
+
+        }
+
+        .header2 {
+            height: 1270px;
+            width: 147px;
+        }
+
+        .logo {
+            height: 120px;
+            width: 120px;
+            position: relative;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fffeff;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            padding: 10px 40px;
+            height: 140px;
+        }
+
+        .cstr-logo {
+            height: 120px;
+            width: auto;
+            padding-bottom: 0%;
+            padding-top: 0%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 85px;
+        }
+
+        .cst-logo {
+            height: 80px;
+            width: auto;
+            padding-right: 100px;
+        }
+
+        .trust-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-grow: 1;
+            padding: 0 20px;
+            min-height: 140px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .trust-name {
+            font-size: 40px;
+            font-weight: bold;
+            color: #fd8719;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .trust-tagline {
+            font-size: 20px;
+            color: #666;
+            font-style: italic;
+            letter-spacing: 0.8px;
+            width: 100%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .trust-name {
+                font-size: 36px;
+            }
+
+            .trust-tagline {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .trust-name {
+                font-size: 28px;
+                letter-spacing: 1.5px;
+            }
+
+            .trust-tagline {
+                font-size: 16px;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #fd8719;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            padding: 0;
+        }
+        
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .nav-list li {
+            position: relative;
+        }
+        
+        .nav-list li a {
+            display: block;
+            color: #fffeff;
+            text-decoration: none;
+            padding: 18px 25px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-list>li>a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 8px;
+            transform: translateX(-50%) scaleX(0);
+            width: 60%;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            transition: transform 0.3s cubic-bezier(.4,2,.6,1), background 0.3s;
+            pointer-events: none;
+        }
+        
+        .nav-list>li>a:hover {
+            background: linear-gradient(90deg, #fd8719 0%, #ff3c3c 100%);
+            color: #fff;
+            box-shadow: 0 4px 18px -8px #fd8719;
+        }
+        
+        .nav-list>li>a:hover::after {
+            transform: translateX(-50%) scaleX(1);
+            background: #fff;
+        }
+        
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fd8719;
+            min-width: 250px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 0 0 8px 8px;
+            overflow: hidden;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: dropdownFade 0.3s ease;
+        }
+        
+        @keyframes dropdownFade {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-10px);
+            }
+        
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+        
+        .dropdown-content a {
+            color: #fd8719;
+            padding: 15px 25px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-transform: none;
+            font-weight: 500;
+            text-align: left;
+        }
+        
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #e51313;
+            color: #fffeff;
+            padding-left: 30px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Active state */
+        .nav-list li.active>a {
+            background-color: red;
+            color: #fffeff;
+        }
+        
+        /* Responsive adjustments */
+        @media screen and (max-width: 1200px) {
+            .nav-list li a {
+                padding: 15px 20px;
+                font-size: 14px;
+            }
+        }
+        
+        @media screen and (max-width: 992px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px;
+            }
+        
+            .nav-list {
+                flex-direction: column;
+                width: 100%;
+            }
+        
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+                min-width: 100%;
+                transform: none;
+                animation: none;
+                border-radius: 0;
+            }
+        
+            .dropdown-content a {
+                padding: 12px 30px;
+                background-color: rgba(166, 76, 228, 0.1);
+            }
+        
+            .nav-list li a {
+                padding: 15px 20px;
+                text-align: center;
+            }
+        
+            .donate-button {
+                position: static;
+                transform: none;
+                margin: 10px 0;
+                width: 100%;
+                justify-content: center;
+            }
+        
+            .donate-button:hover {
+                transform: translateY(-2px);
+            }
+        }
+        
+        /* Donate Button Styles */
+        .donate-button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: darkblue;
+            color: #fffeff;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 2px solid transparent;
+        }
+        
+        .donate-button:hover {
+            background-color: #fffeff;
+            color: red;
+            border-color: red;
+            transform: translateY(calc(-50% - 2px));
+        }
+        
+        .donate-button i {
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .guru-section {
+            display: flex;
+            margin: 40px 0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .guru-info {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .guru-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        /* Alternate colors for sections */
+        .guru-section:nth-child(odd) .guru-info {
+            background-color: #c6defe;
+        }
+
+        .guru-section:nth-child(even) .guru-info {
+            background-color: #c6defe;
+        }
+
+        .guru-section:nth-child(odd) .guru-image {
+            background-color: #c6defe;
+        }
+
+        .guru-section:nth-child(even) .guru-image {
+            background-color: #c6defe;
+        }
+
+        /* Alternate order for image and text */
+        .guru-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .circle-image {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 5px solid #fff;
+        }
+
+        h2 {
+            color: #2c5697;
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .guru-section {
+                flex-direction: column;
+            }
+            
+            .guru-section:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .circle-image {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contact-info">
+            <a href="tel:+918069128888">
+                <i class="fas fa-phone"></i>
+                +91 9302000852
+            </a>
+            <span>|</span>
+            <a href="mailto:oldagehome@sheows.org">
+                <i class="fas fa-envelope"></i>
+                cst.rewa@chinmayamission.com
+            </a>
+        </div>
+
+        <div class="right-section">
+            <div class="social-icons">
+                <a href="#" class="social-icon fb">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="language-select">
+                <select id="language-dropdown" onchange="changeLanguage()">
+                    <option value="">Select Language</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                </select>
+                <div class="google-translate">
+                    Powered by <img
+                        src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_dark_color_42x16dp.png"
+                        alt="Google"> Translate
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="../../Images/cstr.png" alt="cst rewa" class="cstr-logo">
+
+        <div class="trust-info">
+            <div class="trust-name">CHINMAYA MISSION REWA</div>
+            <div class="trust-tagline">To give maximum happiness to maximum people for maximum time</div>
+        </div>
+
+        <img src="../../Images/cst.png" alt="cst logo" class="cst-logo">
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="../../index.html">Home</a></li>
+            <li class="dropdown">
+                
+            </li>
+            <li class="dropdown active">
+                <a href="#" class="dropbtn">About Us</a>
+                <div class="dropdown-content">
+                    <a href="../aboutus.html">About CMT</a>
+                    <a href="ourguru.html">Our Guru</a>
+                    <a href="../Team/team.html">Team</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="../../Our Work/ourwork.html" class="dropbtn">Our Work</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Global Outreach</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Impact Stories</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Media</a>
+                <div class="dropdown-content">
+                    <a href="#">Gallery</a>
+                    <a href="#">Events, Media & Publications</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Resources</a>
+                <div class="dropdown-content">
+                    <a href="../../Faq/faq.html">FAQ</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Become a Volunteer</a>
+                </div>
+            </li>
+        </ul>
+        <a href="../../Donation/donation.html" class="donate-button">
+            <i class="fas fa-heart"></i> DONATE
+        </a>
+    </nav>
+        <div class="container">
+            <h1>Our Gurus</h1>
+        </div>
+    
+    <div class="container">
+        <!-- Swami Tapovan Maharaj -->
+        <div class="guru-section">
+            <div class="guru-info">
+                <h2>Swami Tapovan Maharaj</h2>
+                <p>He is history's few, God's own ascetic, a beacon of knowledge, and a Himalayan jewel — all rolled into one. Swami Tapovanam is a symbol of complete abidance in Truth, the light that never descended — philosophically, literally, and figuratively. He was that pristine glacier of Self-knowledge from whom flowed the Ganga of Vedantic wisdom through Swami Chinmayananda, the founder of Chinmaya Mission.</p>
+            </div>
+            <div class="guru-image">
+                <img src="../../Images/tapovan.jpeg" alt="Swami Tapovan Maharaj" class="circle-image">
+            </div>
+        </div>
+
+        <!-- Swami Chinmayananda -->
+        <div class="guru-section">
+            <div class="guru-info">
+                <h2>Swami Chinmayananda</h2>
+                <p>Pujya Gurudev, as we lovingly call him, learnt the truth about eternal happiness from Swami Tapovanam. Inspired by Holy Ganga flowing down from Himalayas to nourish us, he came down to teach us the knowledge of eternal happiness from our holy scriptures.  He touched the lives of hundreds of thousands of adults and children all over the world until his last breath.  Focusing on Children via Balavihar is one of his unique contributions. We continue to be inspired by His Life and Lessons. He is known for his Jnana Yagnas and hence he is JnanaSwarupa! </p>
+            </div>
+            <div class="guru-image">
+                <img src="../../Images/chinmayanand.jpg" alt="Swami Chinmayananda" class="circle-image">
+            </div>
+        </div>
+
+        <!-- Swami Tejomayananda -->
+        <div class="guru-section">
+            <div class="guru-info">
+                <h2>Swami Tejomayananda</h2>
+                <p>Pujya Guruji as we lovingly call him took over as Head of Chinmaya Mission after Swami Chinmayananda. He wanted to be at the feet of his Guru rather than in his shoes. Pujya Guruji stepped down as head of Chinmaya Mission in 2016 indicating Pujya Gurudev continues to be our focal point for devotion. Pujya Guruji expresses his devotion towards his Guru and Bhagavan through his devotional singing and compositions. He is surely our BhaktiSwarupa! </p>
+            </div>
+            <div class="guru-image">
+                <img src="../../Images/Swami-Tejomayananda.webp" alt="Swami Tejomayananda" class="circle-image">
+            </div>
+        </div>
+
+        <!-- Swami Swaroopananda -->
+        <div class="guru-section">
+            <div class="guru-info">
+                <h2>Swami Swaroopananda</h2>
+                <p>Lovingly known as Mukhya Swamiji, is the current head of Chinmaya Mission worldwide. Swamiji had a seemingly incurable disease as a youth and struggled to even get out of bed. His love to serve Pujya Gurudev was so strong he persevered to serve him despite physical challenges. He increased his devotion to serve Pujya Gurudev to such heights his seemingly incurable disease got cured. Swamiji has served as Head to Chinmaya Mission in several countries before taking on the role of Global Head. Swamiji continues the legacy of Pujya Gurudev and inspires adults and children worldwide. Swamiji is surely our SevaSwarupa!</p>
+            </div>
+            <div class="guru-image">
+                <img src="../../Images/swamiswaroop.webp" alt="Swami Swaroopananda" class="circle-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
